@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerHub | My Projects</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            CareerHub
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+
+        <div class="projects-card">
+
+            <h1>My Projects 🚀</h1>
+
+            <p class="projects-subtitle">
+                Showcase your academic and personal projects.
+            </p>
+
+
+            <!-- Add Project Form -->
+            <form id="projectForm">
+
+                <label for="projectName">
+                    Project Name
+                </label>
+
+                <input
+                    type="text"
+                    id="projectName"
+                    placeholder="Example: CareerHub"
+                    required
+                >
+
+
+                <label for="projectDescription">
+                    Description
+                </label>
+
+                <textarea
+                    id="projectDescription"
+                    placeholder="Describe your project"
+                    required
+                ></textarea>
+
+
+                <label for="projectTechnologies">
+                    Technologies
+                </label>
+
+                <input
+                    type="text"
+                    id="projectTechnologies"
+                    placeholder="Example: HTML, CSS, JavaScript, MySQL"
+                    required
+                >
+
+
+                <label for="projectLink">
+                    Project Link
+                </label>
+
+                <input
+                    type="url"
+                    id="projectLink"
+                    placeholder="https://github.com/..."
+                >
+
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Add Project
+                </button>
+
+            </form>
+
+
+            <!-- Projects List -->
+            <div class="projects-list">
+
+                <h2>My Projects</h2>
+
+                <div id="projectsContainer">
+                    <p>Loading projects...</p>
+                </div>
+
+            </div>
+
+
+            <!-- Back -->
+            <a
+                href="dashboard.html"
+                class="primary-btn projects-back"
+            >
+                Back to Dashboard
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

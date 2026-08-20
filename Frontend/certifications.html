@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerHub | Certifications</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            CareerHub
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="profile.html">Profile</a>
+
+            <a href="skills.html">Skills</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="certifications.html">Certifications</a>
+
+            <a href="#" id="logoutBtn">Logout</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+
+        <div class="certifications-card">
+
+            <h1>My Certifications 📜</h1>
+
+            <p class="certifications-subtitle">
+                Add and showcase your certificates and achievements.
+            </p>
+
+
+            <!-- Add Certification Form -->
+            <form id="certificationForm">
+
+                <label for="certificateName">
+                    Certificate Name
+                </label>
+
+                <input
+                    type="text"
+                    id="certificateName"
+                    placeholder="Example: Java Programming Certificate"
+                    required
+                >
+
+
+                <label for="organization">
+                    Issuing Organization
+                </label>
+
+                <input
+                    type="text"
+                    id="organization"
+                    placeholder="Example: Infosys"
+                    required
+                >
+
+
+                <label for="issueDate">
+                    Issue Date
+                </label>
+
+                <input
+                    type="date"
+                    id="issueDate"
+                >
+
+
+                <label for="certificateLink">
+                    Certificate Link
+                </label>
+
+                <input
+                    type="url"
+                    id="certificateLink"
+                    placeholder="https://drive.google.com/..."
+                >
+
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Add Certification
+                </button>
+
+            </form>
+
+
+            <!-- Certifications List -->
+            <div class="certifications-list">
+
+                <h2>My Certifications</h2>
+
+                <div id="certificationsContainer">
+                    <p>Loading certifications...</p>
+                </div>
+
+            </div>
+
+
+            <!-- Back -->
+            <a
+                href="dashboard.html"
+                class="primary-btn certifications-back"
+            >
+                Back to Dashboard
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

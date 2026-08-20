@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerHub | My Skills</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            CareerHub
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="skills.html">Skills</a>
+            <a href="index.html" onclick="logout()">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+
+        <div class="skills-card">
+
+            <h1>My Skills 💻</h1>
+
+            <p class="skills-subtitle">
+                Add and manage your technical skills.
+            </p>
+
+
+            <!-- Add Skill Form -->
+            <form id="skillForm">
+
+                <label for="skillName">Skill Name</label>
+
+                <input
+                    type="text"
+                    id="skillName"
+                    placeholder="Example: Java"
+                    required
+                >
+
+                <button type="submit" class="primary-btn">
+                    Add Skill
+                </button>
+
+            </form>
+
+
+            <!-- Skills List -->
+            <div class="skills-list">
+
+                <h2>My Skills</h2>
+
+                <div id="skillsContainer">
+                    <p>Loading skills...</p>
+                </div>
+
+            </div>
+
+
+            <a href="dashboard.html" class="primary-btn skills-back">
+                Back to Dashboard
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
